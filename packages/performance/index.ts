@@ -1,0 +1,8 @@
+export { onCLS, CLSThresholds } from './onCLS'
+export { onFCP, FCPThresholds } from './onFCP'
+export { onFID, FIDThresholds } from './onFID'
+export { onINP, INPThresholds } from './onINP'
+export { onLCP, LCPThresholds } from './onLCP'
+export { onTTFB, TTFBThresholds } from './onTTFB'
+export { onTBT, TBTThresholds } from './onTBT'
+export { onTTI, TTIThresholds } from './onTTI'
