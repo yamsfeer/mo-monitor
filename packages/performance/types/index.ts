@@ -6,5 +6,7 @@ export * from './fid'
 export * from './inp'
 export * from './lcp'
 export * from './ttfb'
+export * from './tbt'
+export * from './tti'
 
 export * from './performanceEntry'

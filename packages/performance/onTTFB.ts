@@ -3,14 +3,14 @@ import { observe } from './lib/observe'
 import { createReport } from './lib/report'
 import {
   MetricRatingThresholds,
-  ReportCallback,
+  TTFBReportCallback,
   ReportOpts,
   TTFBMetric
 } from './types'
 
 export const TTFBThresholds: MetricRatingThresholds = [800, 1800]
 
-export function onTTFB(callback: ReportCallback, opts: ReportOpts = {}) {
+export function onTTFB(callback: TTFBReportCallback, opts: ReportOpts = {}) {
   let metric = createMetric('TTFB')
   let report = createReport(
     callback,

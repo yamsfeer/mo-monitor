@@ -4,13 +4,13 @@ import { createReport } from './lib/report'
 import {
   FIDMetric,
   MetricRatingThresholds,
-  ReportCallback,
+  FIDReportCallback,
   ReportOpts
 } from './types'
 
 export const FIDThresholds: MetricRatingThresholds = [100, 300]
 
-export function onFID(callback: ReportCallback, opts: ReportOpts = {}) {
+export function onFID(callback: FIDReportCallback, opts: ReportOpts = {}) {
   let metric = createMetric('FID')
   let report: ReturnType<typeof createReport>
 

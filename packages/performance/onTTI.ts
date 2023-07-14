@@ -1,11 +1,11 @@
 import {
   MetricRatingThresholds,
-  ReportCallback,
+  TTIReportCallback,
   ReportOpts
 } from './types'
 
 export const TTIThresholds: MetricRatingThresholds = [380, 730]
 
-export function onTTI(callback: ReportCallback, opts: ReportOpts = {}) {
+export function onTTI(callback: TTIReportCallback, opts: ReportOpts = {}) {
 
 }

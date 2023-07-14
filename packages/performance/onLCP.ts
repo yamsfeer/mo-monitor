@@ -4,13 +4,13 @@ import { createReport } from './lib/report'
 import {
   LCPMetric,
   MetricRatingThresholds,
-  ReportCallback,
+  LCPReportCallback,
   ReportOpts
 } from './types'
 
 export const LCPThresholds: MetricRatingThresholds = [2500, 4000]
 
-export function onLCP(callback: ReportCallback, opts: ReportOpts = {}) {
+export function onLCP(callback: LCPReportCallback, opts: ReportOpts = {}) {
   let metric = createMetric('LCP')
   let report = createReport(
     callback,

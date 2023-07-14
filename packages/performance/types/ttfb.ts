@@ -4,10 +4,10 @@ export interface TTFBMetric extends Metric {
   name: 'TTFB'
   entries: PerformanceNavigationTiming[]
 
-  waitingTime: number
-  dnsTime: number
-  connectionTime: number
-  requestTime: number
+  waitingTime?: number
+  dnsTime?: number
+  connectionTime?: number
+  requestTime?: number
   navigationEntry?: PerformanceNavigationTiming
 }
 

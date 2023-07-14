@@ -3,14 +3,14 @@ import { observe } from "./lib/observe"
 import { createReport } from "./lib/report"
 import {
   MetricRatingThresholds,
-  ReportCallback,
+  FCPReportCallback,
   ReportOpts,
   FCPMetric,
 } from "./types"
 
 export const FCPThresholds: MetricRatingThresholds = [1800, 3000]
 
-export function onFCP(callback: ReportCallback, opts: ReportOpts = {}) {
+export function onFCP(callback: FCPReportCallback, opts: ReportOpts = {}) {
   let metric = createMetric('FCP')
   let report: ReturnType<typeof createReport>
 

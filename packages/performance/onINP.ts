@@ -4,13 +4,13 @@ import {
   INPMetric,
   MetricRatingThresholds,
   MetricType,
-  ReportCallback,
+  INPReportCallback,
   ReportOpts
 } from './types'
 
 export const INPThresholds: MetricRatingThresholds = [200, 500]
 
-export function onINP(callback: ReportCallback, opts: ReportOpts) {
+export function onINP(callback: INPReportCallback, opts: ReportOpts) {
   let metric = createMetric('INP')
   let report: ReturnType<typeof createReport>
 
